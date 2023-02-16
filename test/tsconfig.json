@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "rootDir": ".",
+    "outDir": "public/lib",
+    "module": "es6",
+    "target": "es2015",
+    "lib": [
+      "es6",
+      "dom",
+      "ESNext",
+      "esnext.asynciterable"
+    ],
+    "sourceMap": false,
+    "allowJs": false,
+    "jsx": "react",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "skipLibCheck": true,
+  },
+}

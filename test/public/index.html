@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="module" src="./lib/Select.js"></script>
+  </head>
+
+  <body>
+    <select-test></select-test>
+
+    <script>
+      const items = [
+        { value: "1", label: "Option 1" },
+        { value: "2", label: "Option 2" }
+      ];
+
+      function onSelectChange(){
+        console.log('slide changed')
+      }
+
+      const [select] = document.getElementsByTagName('select-test')
+      select.setAttribute('items', JSON.stringify(items))
+      select.setAttribute('on-select', onSelectChange);
+      select.addEventListener('on-select', onSelectChange);
+    </script> 
+  </body>
+</html>
